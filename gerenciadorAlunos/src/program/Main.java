@@ -17,7 +17,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
         while(opcao != 9){
-            System.out.println("Gerenciador de Alunos\n\tDigite [1] para adcionar novos alunos\n\tDigite [2] para alistar os alunos adcionados.\n\tDigite [9] para sair da execução");
+            System.out.println("Gerenciador de Alunos\n\tDigite [1] p1ara adcionar novos alunos\n\tDigite [2] para alistar os alunos adcionados.\n\tDigite [9] para sair da execução");
             opcao = scanner.nextInt();
             scanner.nextLine();
             switch (opcao){

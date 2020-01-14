@@ -7,7 +7,7 @@ public class GerenciadorAlunos {
 
     public String validaNome(String nome) {
         // TODO - Pesquisar a diferença de isEmpity e isBlanck
-        if(nome == null || nome.isEmpty() || nome.isBlank()) {
+        if(nome == null  || nome.trim().equals("") || nome.isEmpty() || nome.isBlank()) {
             return "O nome não pode ser nulo!";
         }
 
@@ -16,7 +16,7 @@ public class GerenciadorAlunos {
 
     public String validaDocumento(String documento) {
         // TODO - Pesquisar a diferença de isEmpity e isBlanck
-        if(documento == null || documento.isEmpty() || documento.isBlank()) {
+        if(documento == null || documento.trim().equals("") || documento.isEmpty() || documento.isBlank()) {
             return "O documento não pode ser nulo!";
         } else if (documento.length() < 10) {
             return "O documento deve conter no mínimo 10 caracteres";
